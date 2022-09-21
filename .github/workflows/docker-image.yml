@@ -12,8 +12,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
          node-version: 16
-         cache: npm
-         cache-dependency-path: angular/package.json
+      - run: npm update
       - run: npm install
       - run: npm test
   #build:
