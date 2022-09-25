@@ -15,14 +15,9 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
-      - uses: docker/build-push-action@v2
+      - uses: docker/build-push-action@v3
         with:
           context: .
           file: Dockerfile
-          cache: enabled
-          cache-from: |
-            type=gha,scope=base
-          cache-to: |
-            type=gha,scope=base,mode=max
         #  target: base
           #tags: you/repo/backend:build-stage
