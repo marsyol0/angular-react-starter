@@ -19,9 +19,9 @@ jobs:
         with:
           context: .
           file: Dockerfile
-          #cache-from: |
-         #   type=gha,scope=base
-         # cache-to: |
-         #   type=gha,scope=base,mode=max
+          cache-from: |
+            type=gha,scope=base
+          cache-to: |
+            type=gha,scope=base,mode=max
         #  target: base
           #tags: you/repo/backend:build-stage
