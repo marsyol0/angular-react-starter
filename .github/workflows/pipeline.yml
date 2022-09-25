@@ -15,7 +15,7 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
-      - run: docker build
+      - run: docker build . --file Dockerfile --tag test-image:$(date +$s)
   #build:
    # runs-on: ubuntu-latest
     #steps:
