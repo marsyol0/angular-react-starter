@@ -19,6 +19,7 @@ jobs:
         with:
           context: .
           file: Dockerfile
+          cache: enabled
           cache-from: |
             type=gha,scope=base
           cache-to: |
