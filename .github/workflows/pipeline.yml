@@ -14,6 +14,8 @@ jobs:
          node-version: 16  
       - run: npm ci
       - run: npm test
+      - run: npm run build
+      - run: docker build
   #build:
    # runs-on: ubuntu-latest
     #steps:
