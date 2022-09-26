@@ -19,5 +19,6 @@ jobs:
         with:
           context: .
           file: Dockerfile
+          load: true
         #  target: base
           #tags: you/repo/backend:build-stage
